@@ -12,8 +12,8 @@ class Solution(object):
                 if j==1:
                     profit=max(dp[i+1][1],prices[i]+dp[i+1][0])
                 dp[i][j]=profit
-        print(dp)
+            # print(dp)
         return dp[0][0]
 s=Solution()
-# s.maxProfit([7,1,5,3,6,4])
+s.maxProfit([7,1,5,3,6,4])
 # s.maxProfit([1,2,3,4,5])
