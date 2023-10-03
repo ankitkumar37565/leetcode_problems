@@ -12,7 +12,7 @@ class Solution:
             row, col = q.popleft()
 
             # traverse in the neighbors and mark them if it's land
-            for delrow, delcol in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
+            for delrow, delcol in [(-1, 0), (1, 0), (0, -1), (0, 1),(-1,1),(-1,-1),(1,-1),(1,1)]:
                 nrow, ncol = row + delrow, col + delcol
                 # neighbor row and column is valid, and is an unvisited land
                 if 0 <= nrow < n and 0 <= ncol < m and grid[nrow][ncol] == '1' and not vis[nrow][ncol]:
